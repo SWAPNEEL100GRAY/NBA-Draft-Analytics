@@ -1,154 +1,233 @@
-\# NBA Draft Analytics
+# 🏀 NBA Draft Analytics Platform
 
+An end-to-end Data Analytics and Machine Learning project focused on evaluating NBA Draft outcomes, identifying draft steals, analyzing player performance, and predicting career success using historical NBA player data.
 
+## 🌐 Live Demo
 
-\## Project Overview
+https://nba-draft-analytics.vercel.app
 
+## 📂 GitHub Repository
 
+https://github.com/SWAPNEEL100GRAY/NBA-Draft-Analytics
 
-This project analyzes historical NBA Draft data to identify patterns associated with player career success. The analysis combines Exploratory Data Analysis (EDA), Feature Engineering, Power BI Dashboards, and Machine Learning techniques.
+---
 
+## 📌 Project Overview
 
+The NBA Draft Analytics Platform combines:
 
-\## Objectives
+* Data Cleaning & Wrangling
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Machine Learning
+* Business Intelligence Dashboards
+* Interactive React Frontend
 
+The project analyzes 1,922 NBA players and 238 colleges to uncover patterns behind successful NBA careers.
 
+---
 
-\* Analyze NBA draft trends
+## 📊 Dataset Information
 
-\* Compare draft tiers and career outcomes
+| Metric            | Value    |
+| ----------------- | -------- |
+| Total Players     | 1,922    |
+| Colleges          | 238      |
+| Features          | 20+      |
+| Draft Data        | Included |
+| Career Statistics | Included |
 
-\* Identify colleges producing successful NBA players
+Key variables include:
 
-\* Predict player success categories using Machine Learning
+* Draft Position
+* Games Played
+* Minutes Played
+* Points
+* Rebounds
+* Assists
+* Win Shares
+* Box Plus Minus (BPM)
+* Value Over Replacement Player (VORP)
 
-\* Build an interactive Power BI dashboard
+---
 
+## 🔍 Exploratory Data Analysis
 
+Performed extensive analysis on:
 
-\## Dataset
+* Draft position distribution
+* College-wise player production
+* Career points leaders
+* Draft steals identification
+* Performance trends across draft tiers
+* Success category analysis
 
+---
 
+## ⚙️ Feature Engineering
 
-Historical NBA Draft dataset containing:
+Created additional features including:
 
+* Draft Tier
+* Career Length Category
+* Draft Value Score
 
+These features improved interpretability and machine learning performance.
 
-\* Draft information
+---
 
-\* Player statistics
+## 🤖 Machine Learning Model
 
-\* Career achievements
+### Random Forest Classifier
 
-\* Advanced basketball metrics
+Used a Random Forest Classification model to predict NBA player success categories.
 
+### Key Predictive Features
 
+1. Win Shares
+2. Minutes Played
+3. Value Over Replacement Player (VORP)
+4. Career Points
+5. Draft Position
 
-\## Technologies Used
+### Model Capabilities
 
+* Player Success Prediction
+* Draft Value Evaluation
+* Career Outcome Analysis
 
+---
 
-\* Python
+## 📈 Dashboard Features
 
-\* Pandas
+### Home Page
 
-\* NumPy
+* Dynamic Stadium Hero Section
+* KPI Cards
+* Dashboard Preview
+* Project Highlights
 
-\* Matplotlib
+### Analytics Dashboard
 
-\* Scikit-Learn
+* Career Points Analysis
+* Draft College Analysis
+* Draft Steals Table
+* Success Trend Visualization
 
-\* Power BI
+### Players Database
 
+* NBA Legends Showcase
+* Career Statistics
+* Draft Information
 
+### ML Insights
 
-\## Feature Engineering
+* Model Overview
+* Feature Importance
+* Prediction Workflow
+* Machine Learning Findings
 
+---
 
+## 🛠️ Technologies Used
 
-Created new features:
+### Data Analytics
 
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
 
+### Machine Learning
 
-\* Draft Tier
+* Scikit-Learn
+* Random Forest Classifier
 
-\* Career Length Category
+### Business Intelligence
 
-\* Draft Value Score
+* Power BI
 
-\* Success Category
+### Frontend
 
+* React
+* Vite
+* Recharts
+* CSS3
 
+### Deployment
 
-\## Power BI Dashboard
+* GitHub
+* Vercel
 
+---
 
+## 🚀 Project Workflow
 
-Dashboard includes:
+Raw Dataset
 
+↓
 
+Data Cleaning
 
-\* Total Drafted Players
+↓
 
-\* Average Career Win Shares
+Exploratory Data Analysis
 
-\* Colleges Represented
+↓
 
-\* Average Draft Value Score
+Feature Engineering
 
-\* Draft Tier Analysis
+↓
 
-\* College Performance Analysis
+Machine Learning
 
-\* Top Player Performance Metrics
+↓
 
+Power BI Dashboard
 
+↓
 
-\## Machine Learning
+React Frontend
 
+↓
 
+Vercel Deployment
 
-Model Used:
+---
 
+## 📸 Screenshots
 
+Add screenshots of:
 
-\* Random Forest Classifier
+* Home Page
+* Dashboard
+* Players Page
+* ML Insights Page
 
+inside:
 
+dashboard/images/
 
-Evaluation Metrics:
+and update this section later.
 
+---
 
+## 👨‍💻 Author
 
-\* Accuracy Score
+Swapneel
 
-\* Classification Report
+B.Tech CSE (Data Science)
 
-\* Confusion Matrix
+Aspiring Data Analyst | Machine Learning Enthusiast
 
-\* Feature Importance Analysis
+---
 
+## ⭐ Future Improvements
 
-
-\## Key Findings
-
-
-
-\* Win Shares was the strongest indicator of career success.
-
-\* Minutes Played significantly influenced player outcomes.
-
-\* Value Over Replacement and Points Scored were major predictors.
-
-\* Lottery picks generally produced higher career value than later selections.
-
-
-
-\## Project Outcome
-
-
-
-The project successfully combined analytics, visualization, and machine learning to evaluate NBA draft success patterns and player career outcomes.
-
-
-
+* Player Search & Filtering
+* Advanced Player Comparison
+* SHAP Explainability
+* Live NBA Data Integration
+* Model Comparison Dashboard
+* Player Similarity Engine
