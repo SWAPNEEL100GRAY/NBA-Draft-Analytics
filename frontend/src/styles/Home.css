@@ -51,12 +51,14 @@ body{
 /* HERO */
 
 .hero-section{
-   min-height:85vh;;
+  min-height:100vh;
   width:100%;
-
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
+
+  transition:
+  background-image 1.5s ease-in-out;
 
   position:relative;
 }
@@ -170,16 +172,19 @@ body{
 }
 
 .kpi-card{
-  background:#0d2149;
+  background:#10264f;
+  padding:30px;
   border-radius:20px;
-  padding:35px;
   text-align:center;
 
-  transition:.3s;
+  transition:0.4s;
+  cursor:pointer;
 }
 
 .kpi-card:hover{
-  transform:translateY(-8px);
+  transform:translateY(-10px);
+  box-shadow:0 0 30px rgba(255,123,0,0.5);
+  border:1px solid #ff7b00;
 }
 
 .kpi-card h2{

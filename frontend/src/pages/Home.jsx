@@ -1,4 +1,5 @@
-    import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
     import stadium1 from "../assets/hero/stadium1.jpg";
     import stadium2 from "../assets/hero/stadium2.jpg";
@@ -12,6 +13,28 @@
     import "../styles/Home.css";
 
     function Home() {
+       const stadiums = [
+    stadium1,
+    stadium2,
+    stadium3,
+    stadium4
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+
+      setCurrentImage((prev) =>
+        prev === stadiums.length - 1 ? 0 : prev + 1
+      );
+
+    }, 5000);
+
+    return () => clearInterval(interval);
+
+  }, []);
     return (
         <div>
 
@@ -44,8 +67,8 @@
         <section
   className="hero-section"
   style={{
-    backgroundImage: `url(${stadium1})`
-  }}
+  backgroundImage: `url(${stadiums[currentImage]})`
+}}
 >
 
   <div className="hero-overlay">
