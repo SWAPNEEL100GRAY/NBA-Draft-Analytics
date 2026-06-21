@@ -231,3 +231,6 @@ Aspiring Data Analyst | Machine Learning Enthusiast
 * Live NBA Data Integration
 * Model Comparison Dashboard
 * Player Similarity Engine
+
+ # Live Demo:
+https://nba-draft-analytics.vercel.app
